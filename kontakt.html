@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roshalde</title>
+<meta charset="UTF-8">
+<style>
+    body {
+        background-color: #F5F5DC;
+    }
+</style>
+</head>
+<body>
+    <h1>Kontaktirajte nas</h1>
+    <p>Molimo ispunite sledecu formu:</p>
+    <form action="/submit-form" method="POST" onsubmit="return validateForm()">
+        <label for="name">Ime:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Poruka:</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+    <script src="kontakt.js"></script>
+</body>
+</html>
