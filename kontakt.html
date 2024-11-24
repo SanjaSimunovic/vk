@@ -1,14 +1,28 @@
-<!DOCTYPE html>
 <html>
 <head>
     <link rel="icon" type="image/x-icon" href="fotografije/favicon.ico">
-<title>Roshalde</title>
-<meta charset="UTF-8">
-<style>
-    body {
-        background-color: #F5F5DC;
-    }
-</style>
+    <title>Roshalde</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #F5F5DC;
+        }
+        .social-buttons {
+            margin-top: 20px;
+        }
+        .social-buttons button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .social-buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <h1>Kontaktirajte nas</h1>
@@ -22,6 +36,21 @@
         <textarea id="message" name="message"></textarea>
         <input type="submit" value="Send">
     </form>
+
+    <div class="social-buttons">
+        <button onclick="likeFunction()">Like</button>
+        <button onclick="shareFunction()">Share</button>
+    </div>
+
     <script src="kontakt.js"></script>
+
+    <script>
+        function likeFunction() {
+            alert('You liked this page!');
+        }
+        function shareFunction() {
+            alert('Page shared!');
+        }
+    </script>
 </body>
 </html>
